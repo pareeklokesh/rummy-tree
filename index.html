@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
 </head>
 <body>
 <div class="header-top container-fluid">
@@ -76,7 +78,7 @@
 </div>
 
 <div class="hero-baneer w-100">
-	<img src="assets/img/banner.webp" class="w-100">
+	<img src="assets/img/banner.png" class="w-100">
 </div>
 
 <div class="container-fluid block-space">
@@ -139,7 +141,45 @@
     </div>
 
 
-    <div id="offers" class="offers_section container-fluid block-space">
+    <section id="testimonials" class="testimonials block-space container-fluid">
+  
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title aos-init aos-animate" data-aos="fade-right">
+              <h2 class="text-start block-title">What players says about Rummy Signal</h2>
+              <p style="color: #484848;font-size: 14px;">Till current date, peoples are loving to play game on Rummy Signal. Let's see what players are saying.</p>
+            </div>
+          </div>
+          <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonials-content">
+
+  	<div class="testimonials-slide owl-carousel owl-theme">
+            <div class="item">
+            	<p>Table components is better for smooth game play. Betting and wining is clear, won good amount</p>
+            	<img src="assets/img/user.png">
+        <h3 class="name">Dinesh</h3>
+        <h4 class="job">Jaipur</h4>
+            </div>
+            <div class="item">
+            	<p>Love to play game on the daily basis, as pool rummy is super exciting here.</p>
+            	<img src="assets/img/user.png">
+        <h3 class="name">Vinay Meena</h3>
+        <h4 class="job">Delhi</h4>
+            </div>
+            
+          </div>
+</div>
+           
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- <div id="offers" class="offers_section container-fluid block-space">
                 <div class="container">
                 	<div class="row">
                 		<div class="w-100">
@@ -168,7 +208,7 @@
                         <div class="col-md-12"> <p class="text-center p-t-12"> <a href="#" class="btn btn-bg-view" > View All Offers</a></p> </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 <!-- Footer -->
 
@@ -230,5 +270,24 @@
 </div>
 
 <!-- Footer End! -->
+
+<script>
+  jQuery(document).ready(function($) {
+              $('.testimonials-slide').owlCarousel({
+                center: true,
+                items: 1,
+                loop: true,
+                margin: 10,autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+                responsive: {
+                  600: {
+                    items: 1
+                  }
+                }
+              });
+              });
+</script>
+
 </body>
 </html>

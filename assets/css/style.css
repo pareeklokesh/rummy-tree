@@ -202,3 +202,86 @@ a:hover, .footer-nav li a:hover {
   font-size: 14px;
   margin-left: 10px;
 }
+.testimonials-content {
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  text-align: center;
+}
+.testimonials-content p {
+  background-color: #fe0302;
+color: #fff;
+font-size: 0.86rem;
+padding: 1rem 1.5rem;
+margin-bottom: 2rem;
+letter-spacing: 0.4px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+position: relative;
+font-weight: 400;
+width: 440px;
+text-align: center;
+font-size: 14px;
+position: relative;
+margin: 0px auto;
+margin-bottom: 30px;
+}
+.testimonials-content p::before {
+  content: "";
+position: absolute;
+left: 50%;
+bottom: -10px;
+height: 20px;
+width: 20px;
+background-color: #fe0302;
+transform: translateX(-50%) rotate(45deg);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.testimonials-content .item img {
+  max-width: 60px;
+  border-radius: 50%;
+  width: auto;
+  margin: 0px auto;
+  display: block;
+}
+.testimonials-content .item .name {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.testimonials-content .item .job {
+  font-size: 18px;
+  color: #8d8e97;
+  margin-top: 3px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.testimonials-content .owl-dots {
+  display: none !important;
+}
+.testimonials-content .owl-nav.disabled, .owl-nav {
+  display: block !important;
+}
+.testimonials-content .owl-nav.disabled, .testimonials-content .owl-nav {
+  display: block !important;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+}
+.testimonials-content .owl-nav button {
+  height: 40px;
+width: 40px;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+margin: 0px !important;
+font-size: 18px;
+}
+.testimonials-content .owl-nav button span {
+  font-size: 18px !important;
+}
+.testimonials-content .owl-nav .owl-prev {
+  float: left;
+}
+.testimonials-content .owl-nav .owl-next {
+  float: right;
+}
